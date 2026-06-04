@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyCloudTrailDisable",
+      "Effect": "Deny",
+      "Action": [
+        "cloudtrail:DeleteTrail",
+        "cloudtrail:StopLogging",
+        "cloudtrail:UpdateTrail"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "DenyGuardDutyDisable",
+      "Effect": "Deny",
+      "Action": [
+        "guardduty:DeleteDetector",
+        "guardduty:DisassociateFromMasterAccount"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

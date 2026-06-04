@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "MaxPermsCap",
+      "Effect": "Allow",
+      "Action": [
+        "s3:*",
+        "ec2:Describe*",
+        "cloudwatch:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

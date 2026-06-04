@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "IAMReadAndAnalyzer",
+      "Effect": "Allow",
+      "Action": [
+        "access-analyzer:ListAnalyzers",
+        "access-analyzer:ListFindings",
+        "iam:GenerateCredentialReport",
+        "iam:GetCredentialReport",
+        "iam:ListUsers",
+        "iam:ListRoles",
+        "iam:ListPolicies"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
